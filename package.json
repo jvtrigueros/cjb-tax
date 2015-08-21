@@ -1,27 +1,27 @@
 {
-  "name": "html-hbs-template",
-  "version": "1.0.0",
-  "description": "A static HTML web template using Handlebars.",
+  "name": "cjb-tax",
+  "version": "0.1.0",
+  "description": "A website for CJB Tax and Bookeeping Services, LLC.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jvtrigueros/html-hbs-template.git"
+    "url": "https://github.com/jvtrigueros/cjb-tax.git"
   },
   "keywords": [
-    "html",
-    "hbs",
-    "handlebars",
-    "gulp"
+    "cjb",
+    "tax",
+    "bookeeping",
+    "albuquerque"
   ],
   "author": "Jose V. Trigueros <j.v.trigueros@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jvtrigueros/html-hbs-template/issues"
+    "url": "https://github.com/jvtrigueros/cjb-tax/issues"
   },
-  "homepage": "https://github.com/jvtrigueros/html-hbs-template",
+  "homepage": "https://github.com/jvtrigueros/cjb-tax",
   "devDependencies": {
     "browser-sync": "^2.8.2",
     "del": "^1.2.1",
