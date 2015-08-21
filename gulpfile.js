@@ -14,7 +14,7 @@ var browserSync = require('browser-sync').create()
 
 var dist = path.join(__dirname, 'dist')
   , libs = path.join(__dirname, 'node_modules')
-  , src = path.join(__dirname, 'src')
+  , src = './src'
 
 var packageName = metadata.name + '-' + metadata.version
 
