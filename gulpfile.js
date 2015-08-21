@@ -37,7 +37,8 @@ gulp.task('js', function () {
 })
 
 gulp.task('css', function () {
-  // TODO: Process your css here.
+  return gulp.src(path.join(src, 'css', '*.css'))
+    .pipe(gulp.dest(path.join(dist, 'css')))
 })
 
 gulp.task('assets', function () {
