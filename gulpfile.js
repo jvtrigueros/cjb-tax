@@ -3,6 +3,7 @@
 var gulp = require('gulp')
   , gzip = require('gulp-gzip')
   , hbs = require('gulp-compile-handlebars')
+  , pages = require('gulp-gh-pages')
   , rename = require('gulp-rename')
   , tar = require('gulp-tar')
 
@@ -14,7 +15,7 @@ var browserSync = require('browser-sync').create()
 
 var dist = path.join(__dirname, 'dist')
   , libs = path.join(__dirname, 'node_modules')
-  , src = path.join(__dirname, 'src')
+  , src = './src'
 
 var packageName = metadata.name + '-' + metadata.version
 
@@ -37,11 +38,20 @@ gulp.task('js', function () {
 })
 
 gulp.task('css', function () {
-  // TODO: Process your css here.
+  return gulp.src(path.join(src, 'css', '*.css'))
+    .pipe(gulp.dest(path.join(dist, 'css')))
+    .pipe(browserSync.stream())
 })
 
 gulp.task('assets', function () {
-  // TODO: Process your assets here.
+  gulp.src(path.join(src, 'img', '*.png'))
+    .pipe(gulp.dest(path.join(dist, 'img')))
+    .pipe(browserSync.stream())
+})
+
+gulp.task('deploy', function () {
+  return gulp.src(path.join(dist, '**/*'))
+    .pipe(pages())
 })
 
 gulp.task('serve', ['default'], function () {
