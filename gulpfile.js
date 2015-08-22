@@ -22,8 +22,10 @@ var packageName = metadata.name + '-' + metadata.version
 gulp.task('default', ['hbs', 'css', 'js', 'assets'])
 
 gulp.task('hbs', function () {
+  var year = function() { return new Date().getFullYear() }
   var options = { ignorePartials: true
                 , batch: [src]
+                , helpers: { year: year }
                 }
 
   return gulp.src(path.join(src, 'index.hbs'))
