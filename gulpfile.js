@@ -3,6 +3,7 @@
 var gulp = require('gulp')
   , gzip = require('gulp-gzip')
   , hbs = require('gulp-compile-handlebars')
+  , pages = require('gulp-gh-pages')
   , rename = require('gulp-rename')
   , tar = require('gulp-tar')
 
@@ -39,10 +40,18 @@ gulp.task('js', function () {
 gulp.task('css', function () {
   return gulp.src(path.join(src, 'css', '*.css'))
     .pipe(gulp.dest(path.join(dist, 'css')))
+    .pipe(browserSync.stream())
 })
 
 gulp.task('assets', function () {
-  // TODO: Process your assets here.
+  gulp.src(path.join(src, 'img', '*.png'))
+    .pipe(gulp.dest(path.join(dist, 'img')))
+    .pipe(browserSync.stream())
+})
+
+gulp.task('deploy', function () {
+  return gulp.src(path.join(dist, '**/*'))
+    .pipe(pages())
 })
 
 gulp.task('serve', ['default'], function () {
