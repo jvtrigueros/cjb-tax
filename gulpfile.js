@@ -41,10 +41,7 @@ gulp.task('js', function () {
 })
 
 gulp.task('css', function () {
-  var css = [ path.join(src, 'css', 'form.css')
-            , path.join(src, 'css', 'structure.css')
-            , path.join(src, 'css', 'theme.css')
-            , path.join(src, 'css', 'styles.css')
+  var css = [ path.join(src, 'css', 'styles.css')
             ]
 
   return gulp.src(css)
