@@ -1,6 +1,7 @@
 'use strict'
 
 var gulp = require('gulp')
+  , concat = require('gulp-concat')
   , gzip = require('gulp-gzip')
   , hbs = require('gulp-compile-handlebars')
   , pages = require('gulp-gh-pages')
@@ -40,7 +41,11 @@ gulp.task('js', function () {
 })
 
 gulp.task('css', function () {
-  return gulp.src(path.join(src, 'css', '*.css'))
+  var css = [ path.join(src, 'css', 'styles.css')
+            ]
+
+  return gulp.src(css)
+    .pipe(concat('app.css'))
     .pipe(gulp.dest(path.join(dist, 'css')))
     .pipe(browserSync.stream())
 })
