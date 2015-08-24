@@ -136,6 +136,11 @@ html, body {
     min-height: 200px;
 }
 
+.mdl-demo section > .address {
+    min-height: 450px;
+    text-align: right;
+}
+
 .mdl-demo section > .section__service-icon {
     height: 100px;
 }
