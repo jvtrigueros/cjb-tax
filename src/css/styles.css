@@ -67,6 +67,11 @@ html, body {
 .mdl-demo .mdl-card > * {
     height: auto;
 }
+
+.mdl-demo .mdl-card .mdl-card__title {
+    min-height: 10em;
+}
+
 .mdl-demo .mdl-card .mdl-card__supporting-text {
     margin: 40px;
     flex-grow: 1;
@@ -95,6 +100,16 @@ html, body {
 .mdl-demo .mdl-card__supporting-text + .mdl-card__actions {
     border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
+
+.mdl-demo .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+}
+
+.mdl-demo .mdl-card__media img {
+    width: 100%;
+}
+
 .mdl-demo #add {
     position: absolute;
     right: 40px;
@@ -120,6 +135,11 @@ html, body {
 .mdl-demo section > .section__play-btn {
     min-height: 200px;
 }
+
+.mdl-demo section > .section__service-icon {
+    height: 100px;
+}
+
 .mdl-demo section > header > .material-icons {
     font-size: 3rem;
 }
