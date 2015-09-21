@@ -6,6 +6,7 @@ var gulp = require('gulp')
   , pages = require('gulp-gh-pages')
   , rename = require('gulp-rename')
   , tar = require('gulp-tar')
+  , watch = require('gulp-watch')
 
 var browserSync = require('browser-sync').create()
   , clean = require('del')
@@ -44,7 +45,7 @@ gulp.task('css', function () {
 })
 
 gulp.task('assets', function () {
-  gulp.src(path.join(src, 'img', '*.png'))
+  gulp.src(path.join(src, 'img', '*.*'))
     .pipe(gulp.dest(path.join(dist, 'img')))
     .pipe(browserSync.stream())
 })
@@ -61,9 +62,11 @@ gulp.task('serve', ['default'], function () {
     }
   })
 
-  gulp.watch(path.join(src, '*.hbs'), ['hbs'])
-  gulp.watch(path.join(src, 'css', '*.css'), ['css'])
-  gulp.watch(path.join(src, 'js', '*.js'), ['js'])
+  var launchTask = function (tasks) {tasks.forEach(function (task) {gulp.start(task)})}
+
+  watch(path.join(src, '*.hbs'), launchTask(['hbs']))
+  watch(path.join(src, 'css', '*.css'), launchTask(['css']))
+  watch(path.join(src, 'js', '*.js'), launchTask(['js']))
 })
 
 gulp.task('package', function (cb) {

@@ -31,6 +31,7 @@
     "gulp-gzip": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-tar": "^1.4.0",
+    "gulp-watch": "^4.3.5",
     "run-sequence": "^1.1.2"
   }
 }
