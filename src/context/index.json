@@ -6,7 +6,9 @@
                       , "Authorized IRS e-file Provider"
                       , "Audit and Review Assistance"
                       ]
-        , "content2": ""
+        , "content2": { "p1": "We are a licensed, registered and bonded financial service dedicated to serving all of your accounting and tax related needs. Our mission is to provide you with the highest level of expertise and professionalism."
+                      , "p2": "We offer a full service of financial accounting and tax service for individuals and business owners. If you are not familiar with our company and your first contact with us is online: We would be pleased to hear from you! Please contact us and let us help meet your needs."
+                      }
         }
 , "es": {}
 }

@@ -344,9 +344,7 @@ body {
 }
 
 .sf_pagetitle {
-    color: #75767e;
-    font-size: 48px;
-
+    padding-left: 10%;
 }
 
 .sf_pagetitle h1 {

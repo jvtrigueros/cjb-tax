@@ -10,3 +10,11 @@ body#page_4c9f3d58-5dd9-40e1-8d88-8f9f0ed6a8df div#content1 {
     text-align: center;
     margin-top: 50px;
 }
+
+#content2 p {
+    text-align: center;
+}
+
+#content2 .address {
+    margin-top: 50px;
+}
