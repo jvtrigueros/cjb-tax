@@ -101,9 +101,7 @@ h4 {
 
 body {
     background: #000000 repeat-x;
-    color: #75767e;
-    font-family: "Times New Roman", Times, FreeSerif, serif;
-    font-size: 16px;
+    font-family: "Georgia", "Times New Roman", Times, FreeSerif, serif;
     margin: 0;
     padding: 0;
 }
@@ -319,7 +317,6 @@ body {
  */
 .sf_content {
     line-height: 1.4;
-    font-family: Arial, Helvetica, FreeSans, sans-serif;
 }
 
 .sf_content a {
