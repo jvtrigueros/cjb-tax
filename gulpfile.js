@@ -10,6 +10,7 @@ var gulp = require('gulp')
 
 var browserSync = require('browser-sync').create()
   , clean = require('del')
+  , fs = require('fs')
   , metadata = require('./package')
   , path = require('path')
   , runSequence = require('run-sequence')
@@ -27,11 +28,17 @@ gulp.task('hbs', function () {
                 , batch: [src]
                 }
 
-  return gulp.src(path.join(src, 'index.hbs'))
-    .pipe(hbs({}, options))
-    .pipe(rename('index.html'))
-    .pipe(gulp.dest(dist))
-    .pipe(browserSync.stream())
+  var pages = ['index']
+
+  return pages.forEach(function (page) {
+    var context = JSON.parse(fs.readFileSync(path.join('src/context', page + '.json'))) || {en: {}, es: {}}
+
+    return gulp.src(path.join(src, page + '.hbs'))
+      .pipe(hbs(context.en, options))
+      .pipe(rename({basename: page, extname: '.html'}))
+      .pipe(gulp.dest(dist))
+      .pipe(browserSync.stream())
+  })
 })
 
 gulp.task('js', function () {
@@ -70,6 +77,7 @@ gulp.task('serve', ['default'], function () {
   })
 
   gulp.watch(path.join(src, '*.hbs'), ['hbs'])
+  gulp.watch(path.join(src, 'context/*.json'), ['hbs'])
   gulp.watch(path.join(src, 'css', '*.css'), ['css'])
   gulp.watch(path.join(src, 'js', '*.js'), ['js'])
 })
