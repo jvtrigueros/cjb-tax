@@ -62,11 +62,9 @@ gulp.task('serve', ['default'], function () {
     }
   })
 
-  var launchTask = function (tasks) {tasks.forEach(function (task) {gulp.start(task)})}
-
-  watch(path.join(src, '*.hbs'), launchTask(['hbs']))
-  watch(path.join(src, 'css', '*.css'), launchTask(['css']))
-  watch(path.join(src, 'js', '*.js'), launchTask(['js']))
+  gulp.watch(path.join(src, '*.hbs'), ['hbs'])
+  gulp.watch(path.join(src, 'css', '*.css'), ['css'])
+  gulp.watch(path.join(src, 'js', '*.js'), ['js'])
 })
 
 gulp.task('package', function (cb) {
