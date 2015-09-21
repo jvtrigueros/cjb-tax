@@ -6,7 +6,6 @@ var gulp = require('gulp')
   , pages = require('gulp-gh-pages')
   , rename = require('gulp-rename')
   , tar = require('gulp-tar')
-  , watch = require('gulp-watch')
 
 var browserSync = require('browser-sync').create()
   , clean = require('del')
