@@ -100,8 +100,7 @@ h4 {
 }
 
 body {
-    background-color: #000000;
-    background-repeat: repeat-x;
+    background: #000000 repeat-x;
     color: #75767e;
     font-family: "Times New Roman", Times, FreeSerif, serif;
     font-size: 16px;
@@ -141,7 +140,6 @@ body {
  */
 .sf_header_wrapper {
     min-height: 369px;
-    height: auto !important;
     height: 369px;
     margin-bottom: 20px;
     position: relative;
@@ -172,7 +170,6 @@ body {
     font-family: "Times New Roman", Times, FreeSerif, serif;
     font-size: 64px;
     min-height: 64px;
-    height: auto !important;
     height: 64px;
     letter-spacing: -.04em;
     padding: 0 22px 10px;
@@ -193,7 +190,6 @@ body {
 .sf_navigation {
     background-color: #75767e;
     min-height: 1%;
-    height: auto !important;
     height: 1%;
     margin: 0 0 20px;
     position: relative;
@@ -210,7 +206,6 @@ body {
 
 .sf_navigation ul {
     min-height: 1%;
-    height: auto !important;
     height: 1%;
     margin: 0;
     padding: 10px;
@@ -221,7 +216,7 @@ body {
     display: block;
     clear: both;
     visibility: hidden;
-    height: 0px;
+    height: 0;
 }
 
 .sf_navigation ul li {
@@ -230,9 +225,6 @@ body {
     margin: 0;
     padding: 0;
     white-space: nowrap;
-    min-width: 1%; /* Fast hack */
-    width: auto !important; /* Fast hack */
-    width: 1%; /* Fast hack */
 }
 
 .sf_navigation ul li a {
@@ -242,9 +234,6 @@ body {
     margin: 0;
     padding: 6px 16px;
     text-decoration: none;
-    min-width: 1%; /* Fast hack */
-    width: auto !important; /* Fast hack */
-    width: 1%; /* Fast hack */
 }
 
 .sf_navigation ul li a:visited {
@@ -374,8 +363,6 @@ body {
  */
 .sf_region6 {
     min-height: 1%;
-    height: auto !important;
-    height: 1%;
     position: relative;
     /*added*/
     padding: 20px;
