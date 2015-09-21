@@ -25,10 +25,6 @@ a:hover {
     background-color: #242c39;
 }
 
-.sf_navigation .subnav {
-    background-color: #242c39;
-}
-
 .sf_banner a:link {
     color: #cccccc;
 }
@@ -67,39 +63,4 @@ a:hover {
 
 #seals a:hover {
     background-color: #242c39;
-}
-
-/**
- * -------------------------------
- * @section DBNow
- * -------------------------------
- */
-.Data_Central_color7 {
-    background-color: #003885;
-    color: #fff;
-}
-
-.Data_Central_color1 {
-    background-color: #242c39;
-    color: #fff;
-}
-
-.Data_Central_color2 {
-    background-color: #dadddd;
-}
-
-.Data_Central_color3 {
-    background-color: #e7eaea;
-}
-
-.Data_Central_color6 {
-    background-color: #f6f6f6;
-}
-
-.Data_Central_color4 {
-    background-color: #ffffff;
-}
-
-.Data_Central_color5 {
-    border-color: #ffffff;
 }
