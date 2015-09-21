@@ -493,15 +493,15 @@ body {
     position: absolute;
     height: 369px;
     width: 615px;
-    background: url(img/728_bgphoto.jpg) no-repeat 0 0;
+    background-image: url(../img/bg_uchw.jpg);
 }
 
 .sf_extra3 {
+    position: absolute;
     border-left: 8px solid black;
     height: 369px;
     left: 615px;
-    position: absolute;
     top: 0;
     width: 361px;
-    background: url(img/728_photographer.jpg) no-repeat;
+    background-image: url(../img/bg_oxeb.jpg);
 }
