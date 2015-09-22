@@ -24,8 +24,10 @@ var packageName = metadata.name + '-' + metadata.version
 gulp.task('default', ['hbs', 'css', 'js', 'assets'])
 
 gulp.task('hbs', function () {
+  var copyright = function (year) { return year + '-' + new Date().getFullYear() }
   var options = { ignorePartials: true
                 , batch: [src]
+                , helpers: { copyright: copyright }
                 }
 
   var pages = ['index']
