@@ -78,7 +78,7 @@ gulp.task('serve', ['default'], function () {
     }
   })
 
-  gulp.watch(path.join(src, '*.hbs'), ['hbs'])
+  gulp.watch(path.join(src, '**/*.hbs'), ['hbs'])
   gulp.watch(path.join(src, 'context/*.json'), ['hbs'])
   gulp.watch(path.join(src, 'css', '*.css'), ['css'])
   gulp.watch(path.join(src, 'js', '*.js'), ['js'])
