@@ -11,6 +11,7 @@ var gulp = require('gulp')
 var browserSync = require('browser-sync').create()
   , clean = require('del')
   , fs = require('fs')
+  , merge = require('merge-stream')
   , metadata = require('./package')
   , path = require('path')
   , runSequence = require('run-sequence')
@@ -30,9 +31,10 @@ gulp.task('hbs', function () {
                 , helpers: { copyright: copyright }
                 }
 
-  var pages = ['index']
+  var pages = ['index', 'about']
+    , pageStream = merge()
 
-  return pages.forEach(function (page) {
+  pages.map(function (page) {
     var context = JSON.parse(fs.readFileSync(path.join('src/context', page + '.json'))) || {en: {}, es: {}}
 
     return gulp.src(path.join(src, page + '.hbs'))
@@ -40,7 +42,9 @@ gulp.task('hbs', function () {
       .pipe(rename({basename: page, extname: '.html'}))
       .pipe(gulp.dest(dist))
       .pipe(browserSync.stream())
-  })
+  }).forEach(function(page) { pageStream.add(page) })
+
+  return pageStream
 })
 
 gulp.task('js', function () {
@@ -75,7 +79,8 @@ gulp.task('serve', ['default'], function () {
   browserSync.init({
     server: {
       baseDir: dist
-    }
+    },
+    snippetOptions: { rule: { match: /<link[^>]*>/i } }
   })
 
   gulp.watch(path.join(src, '**/*.hbs'), ['hbs'])
