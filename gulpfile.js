@@ -31,7 +31,7 @@ gulp.task('hbs', function () {
                 , helpers: { copyright: copyright }
                 }
 
-  var pages = ['index', 'about']
+  var pages = ['index', 'about', 'services']
     , pageStream = merge()
 
   pages.map(function (page) {
