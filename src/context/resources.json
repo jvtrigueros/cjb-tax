@@ -46,5 +46,52 @@
                         }
                       ]
         }
-
+, "es": { "title": "Recursos"
+        , "resource": [ { "heading": "Estado y Agencias Gubernamentales"
+                        , "link": [ { "ref": "http://www.tax.newmexico.gov/Pages/TRD-Homepage.aspx"
+                                    , "name": "El Departamento de Rentas Tributación de Nuevo México"
+                                    }
+                                  , { "ref": "http://www.nmprc.state.nm.us"
+                                    , "name": "Comisión de Regulación Pública de Nuevo México"
+                                    }
+                                  , { "ref": "http://www.irs.gov"
+                                    , "name": "IRS"
+                                    }
+                                  , { "ref": "http://www.cabq.gov/treasury/register-your-business"
+                                    , "name": "Ciudad de Albuquerque-Registro de un negocio"
+                                    }
+                                  ]
+                        }
+                      , { "heading": "Noticias e Información"
+                        , "link": [ { "ref": "http://www.wsj.com/"
+                                    , "name": "The Wall Street Journal"
+                                    }
+                                  , { "ref": "http://money.cnn.com/"
+                                    , "name": "CNN Financial News"
+                                    }
+                                  , { "ref": "http://www.thenational.ae/business"
+                                    , "name": "National Business News"
+                                    }
+                                  , { "ref": "http://money.cnn.com/news/world"
+                                    , "name": "World Financial News"
+                                    }
+                                  ]
+                        }
+                      , { "heading": "Recursos para Ley de Impuestos"
+                        , "link": [ { "ref": "http://www.legalbitstream.com/"
+                                    , "name": "Base de datos para ley del Impuesto Federal"
+                                    }
+                                  , { "ref": "http://www.ncsl.org/research/telecommunications-and-information-technology/ncsl-50-state-searchable-bill-tracking-databases.aspx"
+                                    , "name": "Base de datos para ley del Impuesto Estatal"
+                                    }
+                                  , { "ref": "http://thestc.com/"
+                                    , "name": "Tax Law Clearinghouse"
+                                    }
+                                  , { "ref": "http://www.irs.gov/taxtopics/tc500.html"
+                                    , "name": "Índice de deducciones fiscales"
+                                    }
+                                  ]
+                        }
+                      ]
+        }
 }
