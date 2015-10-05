@@ -1,0 +1,13 @@
+{ "en": { "home": "Home"
+        , "about": "About Us"
+        , "services": "Services"
+        , "resources": "Resources"
+        , "contact": "Contact Us"
+        }
+, "es": { "home": "Início"
+        , "about": "Sobre Nosotros"
+        , "services": "Servicios"
+        , "resources": "Recursos"
+        , "contact": "Contacto"
+        }
+}

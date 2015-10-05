@@ -46,8 +46,9 @@ gulp.task('hbs', function () {
 
   pages.map(function (page) {
     var context = JSON.parse(fs.readFileSync(path.join(src, 'context', page + '.json'), 'utf8'))
-    var esContext = extend({}, context.es, {baseAssets: '../'})
-    var enContext = extend({}, context.en)
+    var navContext = JSON.parse(fs.readFileSync(path.join(src, 'context/nav.json'), 'utf8'))
+    var esContext = extend({}, context.es, navContext.es, {baseAssets: '../'})
+    var enContext = extend({}, context.en, navContext.en)
 
     var enStream = gulp.src(path.join(src, page + '.hbs'))
       .pipe(hbs(enContext, options))
