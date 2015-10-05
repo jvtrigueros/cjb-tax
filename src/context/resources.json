@@ -1,3 +1,50 @@
-{ "en": {}
-, "es": {}
+{ "en": { "title": "Resources"
+        , "resource": [ { "heading": "State and Governmental Agencies"
+                        , "link": [ { "ref": "http://www.tax.newmexico.gov/Pages/TRD-Homepage.aspx"
+                                    , "name": "New Mexico Taxation and Revenue Department"
+                                    }
+                                  , { "ref": "http://www.nmprc.state.nm.us"
+                                    , "name": "New Mexico Public Regulation Commission"
+                                    }
+                                  , { "ref": "http://www.irs.gov"
+                                    , "name": "IRS"
+                                    }
+                                  , { "ref": "http://www.cabq.gov/treasury/register-your-business"
+                                    , "name": "City of Albuquerque-Registering a Business"
+                                    }
+                                  ]
+                        }
+                      , { "heading": "News and Information"
+                        , "link": [ { "ref": "http://www.wsj.com/"
+                                    , "name": "The Wall Street Journal"
+                                    }
+                                  , { "ref": "http://money.cnn.com/"
+                                    , "name": "CNN Financial News"
+                                    }
+                                  , { "ref": "http://www.thenational.ae/business"
+                                    , "name": "National Business News"
+                                    }
+                                  , { "ref": "http://money.cnn.com/news/world"
+                                    , "name": "World Financial News"
+                                    }
+                                  ]
+                        }
+                      , { "heading": "Tax Law Resources"
+                        , "link": [ { "ref": "http://www.legalbitstream.com/"
+                                    , "name": "Federal Tax Law Database"
+                                    }
+                                  , { "ref": "http://www.ncsl.org/research/telecommunications-and-information-technology/ncsl-50-state-searchable-bill-tracking-databases.aspx"
+                                    , "name": "State Tax Law Database"
+                                    }
+                                  , { "ref": "http://thestc.com/"
+                                    , "name": "Tax Law Clearinghouse"
+                                    }
+                                  , { "ref": "http://www.irs.gov/taxtopics/tc500.html"
+                                    , "name": "Tax Deductions Index"
+                                    }
+                                  ]
+                        }
+                      ]
+        }
+
 }
