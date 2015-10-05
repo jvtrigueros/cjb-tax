@@ -10,5 +10,16 @@
                       , "p2": "We offer a full service of financial accounting and tax service for individuals and business owners. If you are not familiar with our company and your first contact with us is online: We would be pleased to hear from you! Please contact us and let us help meet your needs."
                       }
         }
-, "es": {}
+, "es": { "title": "Início"
+        , "content1": [ "Preparación de Impuestos"
+                      , "Contabilidad de Pequeña Empresa"
+                      , "Servicios de Notario"
+                      , "Agente Autorizado (ITIN)"
+                      , "Proveedor Autorizado e-file por el Servicio de Impuestos Tributarios (IRS)"
+                      , "Auditoría y Revisión de Asistencia"
+                      ]
+        , "content2": { "p1": "Somos un servicio financiero autorizado, registrado y con garantía dedicado a cubrir todas sus necesidades de contabilidad e impuestos. Nuestra misión es proveerlo del más alto nivel de experiencia y profesionalismo."
+                      , "p2": "Ofrecemos un servicio completo de contabilidad e impuestos para personas físicas y empresarios. Si no está familiarizado con nuestra empresa y su primer contacto con nosotros es en línea, ¡estaremos encantados de saber de usted! Contáctenos y permítanos ayudarlo a conocer sus necesidades."
+                      }
+        }
 }

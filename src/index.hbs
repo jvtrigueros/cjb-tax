@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <title>{{ title }}</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link rel="stylesheet" href="css/app.css"/>
+<link rel="stylesheet" href="{{baseAssets}}css/app.css"/>
 
 <div class="sf_outer_wrapper">
   {{> partials/nav}}
@@ -11,7 +11,7 @@
       <div class="sf_main">
         <div class="sf_region6">
           <div class="sf_pagetitle">
-            <p><img alt="Tax and Bookkeeping Services, LLC." width="475px" src="img/logo-with-name.png"/></p>
+            <p><img alt="Tax and Bookkeeping Services, LLC." width="475px" src="{{baseAssets}}img/logo-with-name.png"/></p>
           </div>
           <div class="sf_content">
             <div id="content1">
@@ -24,7 +24,11 @@
                 <img alt="e-file" src="http://www.irs.gov/image/filingpay_efile.gif"/>
               </p>
               <p>
-                <strong>¡Se habla Español!</strong>
+              {{#unless baseAssets}}
+                <a href="es/index.html">
+                  <strong>¡Se habla Español!</strong>
+                </a>
+              {{/unless}}
               </p>
             </div>
             <div id="content2">
