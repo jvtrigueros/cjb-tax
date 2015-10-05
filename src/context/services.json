@@ -28,29 +28,32 @@
         }
 , "es": { "title": "Servicios"
         , "service": [ { "name": "Preparación de Impuestos para Empresas e individuos"
-                       , "description": "Cada mes o trimestre nosotros podemos hacer lo siguiente para su empresa."
+                       , "description": "Preparamos todas las declaraciones de impuestos federales, estatales y locales para individuos y dueños de empresas."
                        }
                      , { "name": "Contabilidad para Pequeñas Empresas"
-                       , "description": "Each month or quarter we can do the following for your business"
-                       , "extra": [ { "heading": "Bank Reconciliation"
-                                    , "description": "Reconciling your business checking account allows us to keep your bank account, accounting and taxes up to date. It will identify any lost checks, lost deposits and unauthorized  transactions and most importantly let you know how your business is doing."
+                       , "description": "Cada mes o trimestre nosotros podemos hacer lo siguiente para su empresa."
+                       , "extra": [ { "heading": "Conciliación bancaria"
+                                    , "description": "La conciliación de su cuenta de cheques comercial nos permite mantener al día su cuenta bancaria, contabilidad e impuestos. Esto será identificar los cheques perdidos, depósitos perdidos y transacciones no autorizadas y lo más importante, saber cómo su negocio se está desarrollando."
                                     }
-                                  , { "heading": "Income Statements"
-                                    , "description": "An income statement will help you track revenues and expenses, decide what areas of your business are over and under budget and determine your tax liability."
+                                  , { "heading": "Resumen de ingresos"
+                                    , "description": "Un resumen de ingresos le ayudará a realizar un seguimiento de los ingresos y gastos, decidir qué áreas de su negocio se encuentra sobre y bajo el presupuesto y determinar su obligación tributaria."
                                     }
-                                  , { "heading": "Balance Sheets"
-                                    , "description": "A balance sheet will give you a snapshot of your business' financial status at a specific point in time; assist you in determining if you are in a position to expand your business or whether you need to take steps to boost your cash reserves."
+                                  , { "heading": "Balance General"
+                                    , "description": "Un balance general le dará una instantánea del estado financiero de su negocio en un punto específico del tiempo; ayudará a determinar si está en condiciones de ampliar su negocio o si usted necesita tomar medidas para aumentar sus reservas de efectivo."
                                     }
-                                  , { "heading": "General Journal and Ledger"
-                                    , "description": "These records are the most important as they are the core of your business' financial records. Every transaction flows through the ledger and any problem can throw your \"books\" off. We will review and ensure all transactions are properly recorded and accurate."
+                                  , { "heading": "Diario general y  el Libro Mayor"
+                                    , "description": "Estos registros son los más importantes, ya que son el núcleo de los registros financieros de su negocio. Cada transacción fluye a través del Libro Mayor y cualquier problema puede hacer que usted deje de lado sus \"libros\". Vamos a revisar y asegurar que todas las transacciones sean adecuadamente registradas y precisas."
                                     }
-                                  , { "heading": "Comprehensive Payroll Service"
-                                    , "description": "Our payroll checks are prepared and printed on time, every time. We can do employee direct deposit and tax deposits. Customized payroll reports-We provide monthly, quarterly and annual payroll tax reports including W-2, W-3 and form 1099."
+                                  , { "heading": "Servicio de Nómina Integral"
+                                    , "description": "Nuestros cheques de nómina se preparan y se imprimen en tiempo, siempre. Podemos hacer el depósito directo de los empleados y depósitos fiscales. Informes de nómina personalizados. Proporcionamos  mensualmente, trimestralmente y anualmente informes de impuestos de nómina incluyendo W-2, W-3 y el formulario 1099."
                                     }
                                   ]
                        }
-                     , { "name": "Audit and Review Assistance"
-                       , "description": "We can assist you with Internal Revenue Service (IRS) notifications or any other related correspondence by conducting a thorough review of your financial records and contacting third parties on your behalf."
+                     , { "name": "Servicio de Notario"
+                       , "description": "Llevamos a cabo los siguientes actos notariales: reconocimientos, toma de juramentos y afirmaciones, certificados notariales y certificaciones de copias."
+                       }
+                     , { "name": "Asistencia en Revisiones y Auditoría"
+                       , "description": "Podemos ayudarle con el Servicio de Rentas Internas (IRS) notificaciones o cualquier otro tipo de correspondencia relacionada al realizar una revisión exhaustiva de sus registros financieros y el contacto a terceros en su nombre."
                        }
                      ]
         }
