@@ -22,6 +22,16 @@ var dist = path.join(__dirname, 'dist')
 
 var packageName = metadata.name + '-' + metadata.version
 
+function extend(target) {
+  var sources = [].slice.call(arguments, 1)
+  sources.forEach(function (source) {
+    for (var prop in source) {
+      target[prop] = source[prop]
+    }
+  })
+  return target
+}
+
 gulp.task('default', ['hbs', 'css', 'js', 'assets'])
 
 gulp.task('hbs', function () {
@@ -35,13 +45,23 @@ gulp.task('hbs', function () {
     , pageStream = merge()
 
   pages.map(function (page) {
-    var context = JSON.parse(fs.readFileSync(path.join('src/context', page + '.json'))) || {en: {}, es: {}}
+    var context = JSON.parse(fs.readFileSync(path.join(src, 'context', page + '.json'), 'utf8'))
+    var esContext = extend({}, context.es, {baseAssets: '../'})
+    var enContext = extend({}, context.en)
 
-    return gulp.src(path.join(src, page + '.hbs'))
-      .pipe(hbs(context.en, options))
+    var enStream = gulp.src(path.join(src, page + '.hbs'))
+      .pipe(hbs(enContext, options))
       .pipe(rename({basename: page, extname: '.html'}))
       .pipe(gulp.dest(dist))
       .pipe(browserSync.stream())
+
+    var esStream = gulp.src(path.join(src, page + '.hbs'))
+      .pipe(hbs(esContext, options))
+      .pipe(rename({basename: page, extname: '.html'}))
+      .pipe(gulp.dest(path.join(dist, 'es')))
+      .pipe(browserSync.stream())
+
+    return merge(enStream, esStream)
   }).forEach(function(page) { pageStream.add(page) })
 
   return pageStream
