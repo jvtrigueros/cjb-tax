@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <title>{{ title }}</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link rel="stylesheet" href="css/app.css"/>
+<link rel="stylesheet" href="{{ baseAssets }}css/app.css"/>
 
 <div class="sf_outer_wrapper">
   {{> partials/nav}}
@@ -10,7 +10,7 @@
     <div class="sf_main_wrapper">
       <div class="sf_main">
         <div class="sf_region6">
-          <h1>Contact Us</h1>
+          <h1>{{ title }}</h1>
           <div class="sf_content">
             <form name="Contact Form" id="wstForm_Contact"
                   action=""
