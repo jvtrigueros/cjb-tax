@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <title>{{ title }}</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link rel="stylesheet" href="css/app.css"/>
+<link rel="stylesheet" href="{{ baseAssets }}css/app.css"/>
 
 <div class="sf_outer_wrapper">
   {{> partials/nav}}
@@ -10,58 +10,19 @@
     <div class="sf_main_wrapper">
       <div class="sf_main">
         <div class="sf_region6">
-          <h1>Services</h1>
-          <div class="sf_content" style="text-align: center;">
-            <p>
-              <strong>Individual and Business Tax Preparation</strong><br />
-              We prepare all federal, state and local tax returns for individuals and business owners.
-            </p>
-
-            <p>
-              <strong>Small Business Accounting</strong><br/>
-              Each month or quarter we can do the following for your business.<br/>
-            </p>
-
-            <p>
-              <em>Bank Reconciliation-</em>Reconciling your business checking account allows us to keep your bank
-              account, accounting and taxes up to date. It will identify any lost checks, lost deposits and unauthorized
-              transactions and most importantly let you know how your business is doing.
-            </p>
-
-            <p>
-              <em>Income Statements-</em>An income statement will help you track revenues and expenses, decide what
-              areas of your business are over and under budget and determine your tax liability.
-            </p>
-
-            <p>
-              <em>Balance Sheets-</em> A balance sheet will give you a snapshot of your business&#8217; financial
-              status at a specific point in time; assist you in determining if you are in a position to expand your
-              business or whether you need to take steps to boost your cash reserves.
-            </p>
-
-            <p>
-              <em>General Journal and Ledger-</em>These records are the most important as they are the core of your
-              business&#8217; financial records. Every transaction flows through the ledger and any problem can throw
-              your "books" off. We will review and ensure all transactions are properly recorded and accurate.
-            </p>
-
-            <p>
-              <em>Comprehensive Payroll Service-</em>Our payroll checks are prepared and printed on time, every time.
-              We can do employee direct deposit and tax deposits. Customized payroll reports-We provide monthly,
-              quarterly and annual payroll tax reports including W-2, W-3 and form 1099.
-            </p>
-
-            <p>
-              <strong>Notary Service</strong><br/>
-              We perform the following notarial acts: acknowledgments, administer oaths and affirmations, Jurats and
-              copy certifications.
-            </p>
-
-            <p>
-              <strong>Audit and Review Assistance</strong><br/>
-              We can assist you with Internal Revenue Service (IRS) notifications or any other related correspondence by
-              conducting a thorough review of your financial records and contacting third parties on your behalf.
-            </p>
+          <h1>{{ title }}</h1>
+          <div class="sf_content">
+            {{#each service}}
+              <p>
+                <strong>{{ name }}</strong><br />
+                {{ description }}
+              </p>
+              {{#each extra}}
+                <p>
+                  <em>{{ heading }}</em> - {{ description }}
+                </p>
+              {{/each}}
+            {{/each}}
           </div>
         </div>
       </div>

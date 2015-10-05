@@ -1,3 +1,57 @@
-{ "en": {}
-, "es": {}
+{ "en": { "title": "Services"
+        , "service": [ { "name": "Individual and Business Tax Preparation"
+                       , "description": "We prepare all federal, state and local tax returns for individuals and business owners."
+                       }
+                     , { "name": "Small Business Accounting"
+                       , "description": "Each month or quarter we can do the following for your business"
+                       , "extra": [ { "heading": "Bank Reconciliation"
+                                    , "description": "Reconciling your business checking account allows us to keep your bank account, accounting and taxes up to date. It will identify any lost checks, lost deposits and unauthorized  transactions and most importantly let you know how your business is doing."
+                                    }
+                                  , { "heading": "Income Statements"
+                                    , "description": "An income statement will help you track revenues and expenses, decide what areas of your business are over and under budget and determine your tax liability."
+                                    }
+                                  , { "heading": "Balance Sheets"
+                                    , "description": "A balance sheet will give you a snapshot of your business' financial status at a specific point in time; assist you in determining if you are in a position to expand your business or whether you need to take steps to boost your cash reserves."
+                                    }
+                                  , { "heading": "General Journal and Ledger"
+                                    , "description": "These records are the most important as they are the core of your business' financial records. Every transaction flows through the ledger and any problem can throw your \"books\" off. We will review and ensure all transactions are properly recorded and accurate."
+                                    }
+                                  , { "heading": "Comprehensive Payroll Service"
+                                    , "description": "Our payroll checks are prepared and printed on time, every time. We can do employee direct deposit and tax deposits. Customized payroll reports-We provide monthly, quarterly and annual payroll tax reports including W-2, W-3 and form 1099."
+                                    }
+                                  ]
+                       }
+                     , { "name": "Audit and Review Assistance"
+                       , "description": "We can assist you with Internal Revenue Service (IRS) notifications or any other related correspondence by conducting a thorough review of your financial records and contacting third parties on your behalf."
+                       }
+                     ]
+        }
+, "es": { "title": "Servicios"
+        , "service": [ { "name": "Preparación de Impuestos para Empresas e individuos"
+                       , "description": "Cada mes o trimestre nosotros podemos hacer lo siguiente para su empresa."
+                       }
+                     , { "name": "Contabilidad para Pequeñas Empresas"
+                       , "description": "Each month or quarter we can do the following for your business"
+                       , "extra": [ { "heading": "Bank Reconciliation"
+                                    , "description": "Reconciling your business checking account allows us to keep your bank account, accounting and taxes up to date. It will identify any lost checks, lost deposits and unauthorized  transactions and most importantly let you know how your business is doing."
+                                    }
+                                  , { "heading": "Income Statements"
+                                    , "description": "An income statement will help you track revenues and expenses, decide what areas of your business are over and under budget and determine your tax liability."
+                                    }
+                                  , { "heading": "Balance Sheets"
+                                    , "description": "A balance sheet will give you a snapshot of your business' financial status at a specific point in time; assist you in determining if you are in a position to expand your business or whether you need to take steps to boost your cash reserves."
+                                    }
+                                  , { "heading": "General Journal and Ledger"
+                                    , "description": "These records are the most important as they are the core of your business' financial records. Every transaction flows through the ledger and any problem can throw your \"books\" off. We will review and ensure all transactions are properly recorded and accurate."
+                                    }
+                                  , { "heading": "Comprehensive Payroll Service"
+                                    , "description": "Our payroll checks are prepared and printed on time, every time. We can do employee direct deposit and tax deposits. Customized payroll reports-We provide monthly, quarterly and annual payroll tax reports including W-2, W-3 and form 1099."
+                                    }
+                                  ]
+                       }
+                     , { "name": "Audit and Review Assistance"
+                       , "description": "We can assist you with Internal Revenue Service (IRS) notifications or any other related correspondence by conducting a thorough review of your financial records and contacting third parties on your behalf."
+                       }
+                     ]
+        }
 }
