@@ -2,6 +2,7 @@
 
 var gulp = require('gulp')
   , concat = require('gulp-concat')
+  , file = require('gulp-file')
   , gzip = require('gulp-gzip')
   , hbs = require('gulp-compile-handlebars')
   , pages = require('gulp-gh-pages')
@@ -93,6 +94,7 @@ gulp.task('assets', function () {
 
 gulp.task('deploy', function () {
   return gulp.src(path.join(dist, '**/*'))
+    .pipe(file('CNAME', 'cjbtaxandbookkeeping.com'))
     .pipe(pages())
 })
 
