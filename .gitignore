@@ -78,5 +78,6 @@ crashlytics.properties
 crashlytics-build.properties
 
 dist
+.publish
 
 *.tar.gz

@@ -1,10 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
-  It works!
-</body>
-</html>
+<title>{{ title }}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="{{baseAssets}}css/app.css"/>
+
+<div class="sf_outer_wrapper">
+  {{> partials/nav}}
+
+  <div class="sf_wrapper">
+    <div class="sf_main_wrapper">
+      <div class="sf_main">
+        <div class="sf_region6">
+          <div class="sf_pagetitle">
+            <p><img alt="Tax and Bookkeeping Services, LLC." width="475px" src="{{baseAssets}}img/logo-with-name.png"/></p>
+          </div>
+          <div class="sf_content">
+            <div id="content1">
+              <ul>
+                {{#each content1}}
+                  <li>{{this}}</li>
+                {{/each}}
+              </ul>
+              <p>
+                <img alt="e-file" src="http://www.irs.gov/image/filingpay_efile.gif"/>
+              </p>
+              <p>
+              {{#unless baseAssets}}
+                <a href="es/index.html">
+                  <strong>¡Se habla Español!</strong>
+                </a>
+              {{/unless}}
+              </p>
+            </div>
+            <div id="content2">
+              <p>{{content2.p1}}</p>
+              <p>{{content2.p2}}</p>
+              <p class="address">
+                CJB Tax and Bookkeeping Services, LLC<br/>
+                1330 San Pedro Drive NE. Suite 110<br/>
+                (505) 554-1881 Office<br/>
+                (505) 435-9045 Fax<br/>
+                <a href="mailto:customerservice@cjbtaxandbookkeeping.com">customerservice@cjbtaxandbookkeeping.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /sf_main_wrapper -->
+    </div>
+    <!-- /sf_main -->
+  </div>
+</div>
+<!-- /sf_outer_wrapper -->
+{{> partials/footer}}

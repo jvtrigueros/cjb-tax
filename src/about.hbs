@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<title>{{ title }}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="{{ baseAssets }}css/app.css"/>
+
+<div class="sf_outer_wrapper">
+  {{> partials/nav}}
+
+  <div class="sf_wrapper">
+    <div class="sf_main_wrapper">
+      <div class="sf_main">
+        <div class="sf_region6">
+          <h1>{{ title }}</h1>
+          <div class="sf_content">
+            {{#each owners as |owner|}}
+              {{#each content}}
+                {{#unless @index}}
+                  <p>
+                    <strong>{{ owner.name }}</strong> {{ this }}
+                  </p>
+                {{else}}
+                  <p>{{ this }}</p>
+                {{/unless}}
+              {{/each}}
+            {{/each}}
+          </div>
+        </div>
+      </div>
+      <!-- /sf_main_wrapper -->
+    </div>
+    <!-- /sf_main -->
+  </div>
+</div>
+<!-- /sf_outer_wrapper -->
+{{> partials/footer}}

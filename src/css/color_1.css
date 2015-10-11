@@ -1,0 +1,66 @@
+/**
+ * @file
+ * @project 728
+ * @package sftheme
+ * @site app1
+ */
+body {
+    background-image: url(../img/728_bg_1.jpg);
+}
+
+a:link {
+    color: #242c39;
+}
+
+a:visited {
+    color: #242c39;
+}
+
+a:hover {
+    color: #000000;
+}
+
+.sf_navigation ul li:hover a,
+.sf_navigation ul li.sfhover a {
+    background-color: #242c39;
+}
+
+.sf_banner a:link {
+    color: #cccccc;
+}
+
+.sf_banner a:visited {
+    color: #cccccc;
+}
+
+.sf_banner a:hover {
+    background-color: #242c39;
+}
+
+.sf_banner #bannerLink a {
+    color: #cccccc;
+}
+
+.sf_banner #bannerLink a:link {
+    color: #cccccc;
+}
+
+.sf_banner #bannerLink a:visited {
+    color: #cccccc;
+}
+
+.sf_banner #bannerLink a:hover {
+    background-color: #242c39;
+}
+
+#seals a {
+    color: #cccccc;
+}
+
+#seals a:visited {
+    color: #cccccc;
+}
+
+#seals a:hover {
+    background-color: #242c39;
+}

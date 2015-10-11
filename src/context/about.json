@@ -1,0 +1,35 @@
+{ "en": { "title": "About Us"
+        , "owners": [ { "name": "Karen Lee"
+                      , "content": [ "is a certified bookkeeper through the American Institute of Professional Bookkeepers (AIPB) and has a degree in Financial Accounting. She has more than 10 years of experience with tax preparation and small business accounting."
+                                   , "Karen is active in a number of professional organizations including the Hispanic Chamber of Commerce and treats every client with respect and integrity. Karen provides tax and accounting services to individuals and business owners."
+                                   , "Karen enjoys spending time with her son Christian when she is not in the office and visiting San Diego, CA where she spent 5 years living."
+                                   ]
+                      }
+                    , { "name": "Daisy Segura"
+                      , "content": [ "manages the business aspects of the company. She has a degree in Business Administration and has a great deal of experience in Human Resources. During the tax season, Daisy helps with the high demand of tax preparations and in he spare time enojys spending time with her two children and family."
+                                   ]
+                      }
+                    , { "name": "Jazmin Chacon"
+                      , "content": [ "joined CJB Tax and Bookkeeping Services, LLC in 2010 and brings a great deal of experience and knowledge with her. She works in the office year-round and manages the marketing and advertising for the company. In her spare time, she enjoys spending time with her son Ryan."
+                                   ]
+                      }
+                    ]
+        }
+, "es": { "title": "Sobre Nosotros"
+        , "owners": [ { "name": "Karen Lee"
+                      , "content": [ "es una contadora certificada por el Instituto Americano Profesional de Contaduría (AIPB por sus siglas en inglés) y tiene una licenciatura en Contabilidad Financiera. Tiene más de 10 años de experiencia en preparación de impuestos y en contabilidad de empresa pequeña."
+                                   , "Karen está activa en un gran número de organizaciones profesionales incluyendo la Cámara Hispana de Comercio y trata a cada cliente con respeto e integridad. Karen provee servicios de contabilidad e impuestos a personas físicas y empresarios."
+                                   , "Karen disfruta de pasar tiempo con su hijo Christiab cuando no está en la oficina, y visitar San Diego, CA, donde vivió por 5 años."
+                                   ]
+                      }
+                    , { "name": "Daisy Segura"
+                      , "content": [ "se hace cargo de los aspectos empresariales de la empresa. Tiene una carrera en Administración de Empresas y tiene además una gran experiencia en Recursos Humanos. Durante la época de impuestos, Daisy apoya con la gran demanda de la preparación de impuestos; en su tiempo libre, disfruta de pasar tiempo con sus dos hijos y su familia."
+                                   ]
+                      }
+                    , { "name": "Jazmin Chacon"
+                      , "content": [ "se unió a CJB Tax and Bookkeppikg Services, LLC en el 2010 y se trajo una gran experiencia y conocimiento con ella. Ella trabaja en la oficina durante todo el año y gestiona la mercadotecnia y publicidad para la empresa. En su tiempo libre, disfruta de pasar sus ratos libres con su hijo Ryan."
+                                   ]
+                      }
+                    ]
+        }
+}
