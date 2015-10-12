@@ -6,7 +6,13 @@
       <li><a href="services.html">{{services}}</a></li>
       <li><a href="resources.html">{{resources}}</a></li>
       <li><a href="contact.html">{{contact}}</a></li>
-      <li class="btn-wrapper"><a class="btn" href="#">Español</a></li>
+      <li class="btn-wrapper">
+        {{#unless baseAssets}}
+          <a class="btn" href="">Español</a>
+        {{else}}
+          <a class="btn" href="">English</a>
+        {{/unless}}
+      </li>
     </ul>
   </div>
 </div>
