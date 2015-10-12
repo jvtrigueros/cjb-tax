@@ -22,6 +22,7 @@ var dist = path.join(__dirname, 'dist')
   , src = './src'
 
 var packageName = metadata.name + '-' + metadata.version
+  , websiteName = 'cjbtaxandbookkeeping.com'
 
 function extend(target) {
   var sources = [].slice.call(arguments, 1)
@@ -48,8 +49,8 @@ gulp.task('hbs', function () {
   pages.map(function (page) {
     var context = JSON.parse(fs.readFileSync(path.join(src, 'context', page + '.json'), 'utf8'))
     var navContext = JSON.parse(fs.readFileSync(path.join(src, 'context/nav.json'), 'utf8'))
-    var esContext = extend({}, context.es, navContext.es, {baseAssets: '../'})
-    var enContext = extend({}, context.en, navContext.en)
+    var esContext = extend({page: page + '.html', baseAssets: '../'}, context.es, navContext.es)
+    var enContext = extend({page: page + '.html'}, context.en, navContext.en)
 
     var enStream = gulp.src(path.join(src, page + '.hbs'))
       .pipe(hbs(enContext, options))
@@ -94,7 +95,7 @@ gulp.task('assets', function () {
 
 gulp.task('deploy', function () {
   return gulp.src(path.join(dist, '**/*'))
-    .pipe(file('CNAME', 'cjbtaxandbookkeeping.com'))
+    .pipe(file('CNAME', websiteName))
     .pipe(pages())
 })
 
