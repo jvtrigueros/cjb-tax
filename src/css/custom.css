@@ -18,3 +18,15 @@ body div#content1 {
 #content2 .address {
     margin-top: 50px;
 }
+
+.btn {
+    color: #ffffff;
+    font-size: 20px;
+    background: #FFA500;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.sf_navigation li.btn-wrapper {
+    padding-left: 30%;
+}
