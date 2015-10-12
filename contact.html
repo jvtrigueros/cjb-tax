@@ -6,17 +6,16 @@
 <div class="sf_outer_wrapper">
   <div class="sf_region1">
     <div class="sf_navigation">
-      <div class="widget main_nav">
-        <div class="widget_content">
-          <ul id="Nav1" class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="btn-wrapper">
+            <a class="btn" href="es/contact.html">Español</a>
+        </li>
+      </ul>
     </div>
   </div>
   
@@ -30,9 +29,7 @@
         <div class="sf_region6">
           <h1>Contact Us</h1>
           <div class="sf_content">
-            <form name="Contact Form" id="wstForm_Contact"
-                  action=""
-                  method="get" labelid="formLabel_ContactForm">
+            <form name="Contact Form" id="wstForm_Contact" action="" method="get">
 
               <table width="100%"
                      style="margin: auto; border: 1px solid currentcolor; border-collapse: collapse;" border="0"
@@ -46,8 +43,7 @@
                       <tr>
                         <td align="center"
                             style="border-bottom-color: currentcolor; border-bottom-width: 1px; border-bottom-style: solid;">
-                          <p>Please complete the fields below and we will respond to your
-                            inquiry within&nbsp;24 hours.</p>
+                          <p>We will respond to your inquiry within 24 hours.</p>
                         </td>
                       </tr>
                       </tbody>
@@ -74,7 +70,7 @@
                       <tr>
                         <td align="right"
                             style="border-top-color: currentcolor; border-bottom-color: currentcolor; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;">
-                                  <span id="formLabel_Street1" controlid="formElement_Street1">Address Street 1:</span></td>
+                                  <span id="formLabel_Street1" controlid="formElement_Street1">Street Address:</span></td>
 
                         <td style="border-top-color: currentcolor; border-bottom-color: currentcolor; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;">
                           <input name="Address Street 1" id="formElement_Street1" size="30" labelid="formLabel_Street1"/></td>
@@ -83,7 +79,7 @@
                       <tr>
                         <td align="right"
                             style="border-top-color: currentcolor; border-bottom-color: currentcolor; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;">
-                                  <span id="formLabel_Street2" controlid="formElement_Street2">Address Street 2:</span></td>
+                                  <span id="formLabel_Street2" controlid="formElement_Street2">Address Line 2:</span></td>
 
                         <td style="border-top-color: currentcolor; border-bottom-color: currentcolor; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;">
                           <input name="Address Street 2" id="formElement_Street2" size="30" labelid="formLabel_Street2"/></td>
@@ -104,7 +100,7 @@
                                   <span id="formLabel_Zip" controlid="formElement_Zip">Zip Code:</span></td>
 
                         <td style="border-top-color: currentcolor; border-bottom-color: currentcolor; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;">
-                          <input name="Zip Code" id="formElement_Zip" size="5" maxlength="5" labelid="formLabel_Zip"/> (5 digits)
+                          <input name="Zip Code" id="formElement_Zip" size="5" maxlength="5" labelid="formLabel_Zip"/>
                         </td>
                       </tr>
 
@@ -172,7 +168,7 @@
                       <tr>
                         <td align="right"
                             style="border-top-color: currentcolor; border-bottom-color: currentcolor; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;">
-                                  <span id="formLabel_DaytimePhone" controlid="formElement_DaytimePhone">Daytime Phone:</span></td>
+                                  <span id="formLabel_DaytimePhone" controlid="formElement_DaytimePhone">Primary Phone:</span></td>
 
                         <td style="border-top-color: currentcolor; border-bottom-color: currentcolor; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;">
                           <input name="Daytime Phone" id="formElement_DaytimePhone"
@@ -182,7 +178,7 @@
                       <tr>
                         <td align="right"
                             style="border-top-color: currentcolor; border-bottom-color: currentcolor; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;">
-                                  <span id="formLabel_EveningPhone" controlid="formElement_EveningPhone">Evening Phone:</span></td>
+                                  <span id="formLabel_EveningPhone" controlid="formElement_EveningPhone">Secondary Phone:</span></td>
 
                         <td style="border-top-color: currentcolor; border-bottom-color: currentcolor; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;">
                           <input name="Evening Phone" id="formElement_EveningPhone"
@@ -243,3 +239,14 @@
 <div class="sf_footer">
   Content copyright 2012-2015. <a href="http://cjbtaxandbookkeeping.com">cjbtaxandbookkeeping.com</a>. All rights reserved.
 </div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68692820-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
