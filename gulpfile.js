@@ -94,7 +94,7 @@ gulp.task('assets', function () {
 })
 
 gulp.task('deploy', function () {
-  return gulp.src(path.join(dist, '**/*'))
+  return gulp.src([path.join(dist, '**/*'), 'sitemap.txt'])
     .pipe(file('CNAME', websiteName))
     .pipe(pages())
 })
