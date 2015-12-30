@@ -33,6 +33,7 @@
     "gulp-gzip": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-tar": "^1.4.0",
+    "lodash.assign": "^3.2.0",
     "merge-stream": "^1.0.0",
     "run-sequence": "^1.1.2"
   }
