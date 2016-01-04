@@ -14,7 +14,22 @@ function prepareJob(codeName, payload) {
   return { schedules: [ { payload: JSON.stringify(payload) , code_name: codeName } ] }
 }
 
+function submitForm(jQuery, wufoo, iron, formData, cb) {
+  var payload = prepareWufooForm(wufoo.url, wufoo.key, formData)
+  var job = prepareJob(iron.codeName, payload)
 
+  jQuery.ajax({ url: iron.url + '/2/projects/' + iron.projectId + '/schedules'
+              , type: 'POST'
+              , dataType: 'json'
+              , data: JSON.stringify(job)
+              , headers: { 'Accept': 'application/json'
+                         , 'Content-Type': 'application/json'
+                         , 'Accept-Encoding': 'gzip/deflate'
+                         , 'Authorization': 'OAuth ' + iron.oath
+                         }
+              , success: cb
+              })
+}
 
 /**
  *

@@ -103,9 +103,18 @@
     phoneOne.val(fixPhoneNumber(phoneOne.val()))
     phoneTwo.val(fixPhoneNumber(phoneTwo.val()))
 
+    var wufoo = { url: ''
+                , key: ''
+                }
 
-    submitWufooForm('https://jvtrigueros.wufoo.com', 'LU7V-MFEX-YFH9-CE9K', $(form).serialize())
-    event.preventDefault('')
+    var iron = { url: ''
+               , projectId: ''
+               , oath: ''
+               , codeName: ''
+               }
+
+    submitForm($, wufoo, iron, $(form).serialize())
+    event.preventDefault()
   })
 </script>
 {{> partials/footer}}
