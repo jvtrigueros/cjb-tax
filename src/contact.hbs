@@ -12,7 +12,7 @@
         <div class="sf_region6">
           <h1>{{ title }}</h1>
           <div class="sf_content">
-            <form action="" class="contact">
+            <form id="contact-us" method="post">
               <table class="form" cellspacing="1" cellpadding="3">
                 <tr>
                   <th colspan="2">
@@ -21,33 +21,33 @@
                 </tr>
 
                 <tr>
-                  <td><label for="first-name">{{ first-name }}:</label></td>
-                  <td><input type="text" id="first-name"></td>
+                  <td><label for="Field1">{{ first-name }}:</label></td>
+                  <td><input id="Field1" name="Field1" type="text"></td>
                 </tr>
                 <tr>
-                  <td><label for="last-name">{{ last-name }}:</label></td>
-                  <td><input id="last-name" type="text"></td>
+                  <td><label for="Field2">{{ last-name }}:</label></td>
+                  <td><input id="Field2" name="Field2" type="text"></td>
                 </tr>
                 <tr>
-                  <td><label for="address-one">{{ address-one }}:</label></td>
-                  <td><input id="address-one" type="text" size="30"></td>
+                  <td><label for="Field3">{{ address-one }}:</label></td>
+                  <td><input id="Field3" name="Field3" type="text" size="30"></td>
                 </tr>
                 <tr>
-                  <td><label for="address-two">{{ address-two }}:</label></td>
-                  <td><input id="address-two" type="text" size="30"></td>
+                  <td><label for="Field4">{{ address-two }}:</label></td>
+                  <td><input id="Field4" name="Field4" type="text" size="30"></td>
                 </tr>
                 <tr>
-                  <td><label for="city">{{ city }}:</label></td>
-                  <td><input id="city" type="text"></td>
+                  <td><label for="Field5">{{ city }}:</label></td>
+                  <td><input id="Field5" name="Field5" type="text"></td>
                 </tr>
                 <tr>
-                  <td><label for="zip">{{ zip }}:</label></td>
-                  <td><input id="zip" type="text" size="5" maxlength="5"></td>
+                  <td><label for="Field7">{{ zip }}:</label></td>
+                  <td><input id="Field7" name="Field7" type="text" size="5" maxlength="5"></td>
                 </tr>
                 <tr>
-                  <td><label for="state">{{ state }}:</label></td>
+                  <td><label for="Field6">{{ state }}:</label></td>
                   <td>
-                    <select id="state" type="text">
+                    <select id="Field6" name="Field6" type="text">
                       {{#each states}}
                         <option value="{{ this }}">{{ this }}</option>
                       {{/each}}
@@ -55,21 +55,21 @@
                   </td>
                 </tr>
                 <tr>
-                  <td><label for="phone-one">{{ phone-one }}:</label></td>
-                  <td><input id="phone-one" type="text"></td>
+                  <td><label for="Field10">{{ phone-one }}:</label></td>
+                  <td><input id="Field10" name="Field10" type="text"></td>
                 </tr>
                 <tr>
-                  <td><label for="phone-two">{{ phone-two }}:</label></td>
-                  <td><input id="phone-two" type="text"></td>
+                  <td><label for="Field11">{{ phone-two }}:</label></td>
+                  <td><input id="Field11" name="Field11" type="text"></td>
                 </tr>
                 <tr>
-                  <td><label for="email">{{ email }}:</label></td>
-                  <td><input id="email" type="text"></td>
+                  <td><label for="Field9">{{ email }}:</label></td>
+                  <td><input id="Field9" name="Field9" type="text"></td>
                 </tr>
                 <tr>
-                  <td><label for="question">{{ question }}:</label></td>
+                  <td><label for="Field14">{{ question }}:</label></td>
                   <td>
-                    <textarea id="question" rows="4" cols="38">{{ question-template }}</textarea>
+                    <textarea id="Field14" name="Field14" rows="4" cols="38">{{ question-template }}</textarea>
                   </td>
                 </tr>
 
@@ -88,5 +88,4 @@
     <!-- /sf_main -->
   </div>
 </div>
-<!-- /sf_outer_wrapper -->
 {{> partials/footer}}

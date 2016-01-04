@@ -31,7 +31,7 @@ body div#content1 {
     padding-left: 28%;
 }
 
-form.contact {
+form#contact-us {
     border: 1px solid;
 }
 
