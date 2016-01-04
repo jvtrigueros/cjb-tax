@@ -7,13 +7,14 @@
  * @param {string} data
  */
 function prepareWufooForm(endpoint, key, data) {
-
-  return {}
+  return { wufoo: {url: endpoint, key: key}, formData: data }
 }
 
-function scheduleJob() {
-  
+function prepareJob(codeName, payload) {
+  return { schedules: [ { payload: JSON.stringify(payload) , code_name: codeName } ] }
 }
+
+
 
 /**
  *
