@@ -75,6 +75,8 @@
 
               </table>
 
+              <input title="Country" type="text" name="Field8" hidden="hidden" value="United States">
+
               <p align="center">
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
@@ -88,4 +90,22 @@
     <!-- /sf_main -->
   </div>
 </div>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="{{ baseAssets }}js/contact.js"></script>
+<script>
+  var formId = '#contact-us'
+  $(formId).submit(function (event) {
+    // TODO: Perform some kind of validation here.
+    var form = this
+    var phoneOne = $(form).find('#Field10')
+    var phoneTwo = $(form).find('#Field11')
+
+    phoneOne.val(fixPhoneNumber(phoneOne.val()))
+    phoneTwo.val(fixPhoneNumber(phoneTwo.val()))
+
+
+    submitWufooForm('https://jvtrigueros.wufoo.com', 'LU7V-MFEX-YFH9-CE9K', $(form).serialize())
+    event.preventDefault('')
+  })
+</script>
 {{> partials/footer}}

@@ -62,7 +62,9 @@ gulp.task('hbs', function () {
 })
 
 gulp.task('js', function () {
-  // TODO: Process your javascript libs here.
+  return gulp.src(path.join(src, 'js/**/*.js'))
+    .pipe(gulp.dest(path.join(dist, 'js')))
+    .pipe(browserSync.stream())
 })
 
 gulp.task('css', function () {
