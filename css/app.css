@@ -617,3 +617,30 @@ body div#content1 {
 .sf_navigation li.btn-wrapper {
     padding-left: 28%;
 }
+
+form#contact-us {
+    border: 1px solid;
+}
+
+table.form {
+    margin: auto;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+table.form th {
+    font-weight: normal;
+}
+
+table.form td:first-of-type {
+    text-align: right;
+}
+
+table.form td {
+    border-top: 2px solid;
+    line-height: 1.8em;
+}
+
+table.form textarea {
+    width: 96%;
+}
