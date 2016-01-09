@@ -1,0 +1,17 @@
+{
+  "name": "cjb-worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "worker.js",
+  "scripts": {
+    "start": "node worker.js",
+    "prestart": "npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose V. Trigueros",
+  "license": "ISC",
+  "dependencies": {
+    "iron_worker": "^0.1.6",
+    "request": "^2.67.0"
+  }
+}

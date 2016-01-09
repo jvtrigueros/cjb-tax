@@ -40,8 +40,8 @@ gulp.task('hbs', function () {
   pages.map(function (page) {
     var context = JSON.parse(fs.readFileSync(path.join(src, 'context', page + '.json'), 'utf8'))
     var navContext = JSON.parse(fs.readFileSync(path.join(src, 'context/nav.json'), 'utf8'))
-    var esContext = extend({page: page + '.html', baseAssets: '../'}, context.es, navContext.es)
-    var enContext = extend({page: page + '.html'}, context.en, navContext.en)
+    var esContext = extend({page: page + '.html', baseAssets: '../'}, context.es, navContext.es, context.common)
+    var enContext = extend({page: page + '.html'}, context.en, navContext.en, context.common)
 
     var enStream = gulp.src(path.join(src, page + '.hbs'))
       .pipe(hbs(enContext, options))
@@ -62,7 +62,9 @@ gulp.task('hbs', function () {
 })
 
 gulp.task('js', function () {
-  // TODO: Process your javascript libs here.
+  return gulp.src(path.join(src, 'js/**/*.js'))
+    .pipe(gulp.dest(path.join(dist, 'js')))
+    .pipe(browserSync.stream())
 })
 
 gulp.task('css', function () {
