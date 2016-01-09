@@ -113,7 +113,10 @@
                , codeName: '{{ iron.codeName }}'
                }
 
-    submitForm($, wufoo, iron, $(form).serialize())
+    submitForm($, wufoo, iron, $(form).serialize(), function formSubmitted() {
+        $(form).trigger('reset')
+        alert('Thanks for your inquiry!')
+    })
     event.preventDefault()
   })
 </script>
