@@ -103,14 +103,14 @@
     phoneOne.val(fixPhoneNumber(phoneOne.val()))
     phoneTwo.val(fixPhoneNumber(phoneTwo.val()))
 
-    var wufoo = { url: ''
-                , key: ''
+    var wufoo = { url: '{{ wufoo.url }}'
+                , key: '{{ wufoo.key }}'
                 }
 
-    var iron = { url: ''
-               , projectId: ''
-               , oath: ''
-               , codeName: ''
+    var iron = { url: '{{ iron.url }}'
+               , projectId: '{{ iron.projectId }}'
+               , oauth: '{{ iron.oauth }}'
+               , codeName: '{{ iron.codeName }}'
                }
 
     submitForm($, wufoo, iron, $(form).serialize())

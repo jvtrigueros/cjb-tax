@@ -25,7 +25,7 @@ function submitForm(jQuery, wufoo, iron, formData, cb) {
               , headers: { 'Accept': 'application/json'
                          , 'Content-Type': 'application/json'
                          , 'Accept-Encoding': 'gzip/deflate'
-                         , 'Authorization': 'OAuth ' + iron.oath
+                         , 'Authorization': 'OAuth ' + iron.oauth
                          }
               , success: cb
               })
