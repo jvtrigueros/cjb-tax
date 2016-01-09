@@ -55,21 +55,21 @@
                   </td>
                 </tr>
                 <tr>
-                  <td><label for="Field10">{{ phone-one }}:</label></td>
-                  <td><input id="Field10" name="Field10" type="text"></td>
-                </tr>
-                <tr>
-                  <td><label for="Field11">{{ phone-two }}:</label></td>
-                  <td><input id="Field11" name="Field11" type="text"></td>
-                </tr>
-                <tr>
-                  <td><label for="Field9">{{ email }}:</label></td>
+                  <td><label for="Field9">{{ phone-one }}:</label></td>
                   <td><input id="Field9" name="Field9" type="text"></td>
                 </tr>
                 <tr>
-                  <td><label for="Field14">{{ question }}:</label></td>
+                  <td><label for="Field10">{{ phone-two }}:</label></td>
+                  <td><input id="Field10" name="Field10" type="text"></td>
+                </tr>
+                <tr>
+                  <td><label for="Field11">{{ email }}:</label></td>
+                  <td><input id="Field11" name="Field11" type="text"></td>
+                </tr>
+                <tr>
+                  <td><label for="Field12">{{ question }}:</label></td>
                   <td>
-                    <textarea id="Field14" name="Field14" rows="4" cols="38">{{ question-template }}</textarea>
+                    <textarea id="Field12" name="Field12" rows="4" cols="38">{{ question-template }}</textarea>
                   </td>
                 </tr>
 
@@ -97,8 +97,8 @@
   $(formId).submit(function (event) {
     // TODO: Perform some kind of validation here.
     var form = this
-    var phoneOne = $(form).find('#Field10')
-    var phoneTwo = $(form).find('#Field11')
+    var phoneOne = $(form).find('#Field9')
+    var phoneTwo = $(form).find('#Field10')
 
     phoneOne.val(fixPhoneNumber(phoneOne.val()))
     phoneTwo.val(fixPhoneNumber(phoneTwo.val()))
